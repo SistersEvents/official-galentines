@@ -33,8 +33,8 @@ body {
     font-family: Arial, sans-serif;
     font-weight: bold;
     position: absolute;
-    top: -105px; /* Adjust height above the envelope */
-    left: 40px;
+    top: -100px; /* Adjust height above the envelope */
+    left: 80px;
     transform: translateX(-50%);
     width: 100%;
     z-index: 20; /* Ensure it's above other elements */
