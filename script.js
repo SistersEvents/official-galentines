@@ -12,6 +12,6 @@ $(document).ready(function () {
 
     // ✅ Make the entire envelope clickable
     $('.valentines').click(function () {
-        window.location.href = "https://book.stripe.com/fZeg1XbnYdVtfV68w"; // Your Stripe link
+        window.location.href = "https://book.stripe.com/fZeg1XbnYdVtfV68wx"; // Corrected Stripe link
     });
 });
