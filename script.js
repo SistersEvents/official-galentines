@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // Envelope hover animation
     $('.container').mouseenter(function () {
         $('.card').stop().animate({
             top: '-90px'
@@ -9,8 +10,8 @@ $(document).ready(function () {
         }, 'slow');
     });
 
-    // ✅ Redirect to Stripe when the heart is clicked
-    $('#heart').click(function () {
+    // ✅ Make the entire envelope clickable
+    $('.valentines').click(function () {
         window.location.href = "https://book.stripe.com/3cs1739fQcRp24g144"; // Your Stripe link
     });
 });
