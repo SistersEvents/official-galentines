@@ -11,6 +11,6 @@ $(document).ready(function () {
 
     // Redirect to Stripe when the heart is clicked
     $('.heart').click(function () {
-        window.location.href = "https://book.stripe.com/3cs1739fQcRp24g144"; // Replace with your Stripe checkout link
+        window.location.href = "https://book.stripe.com/3cs1739fQcRp24g144"; // Replace with your actual Stripe link
     });
 });
