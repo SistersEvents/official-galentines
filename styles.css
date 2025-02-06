@@ -26,6 +26,34 @@ body {
   }
 }
 
+.mobile-instruction {
+    font-size: 14px;
+    color: #003049;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: -30px; /* Moves it above the envelope */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the text */
+    width: 100%;
+    font-weight: bold;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show the text only on mobile */
+@media (max-width: 768px) {
+    .mobile-instruction {
+        display: block;
+    }
+}
+
+/* Hide the instruction when envelope opens */
+.container:hover .mobile-instruction {
+    opacity: 0;
+}
+
+
 .envelope {
   position: relative;
   width: 300px;
