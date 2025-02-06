@@ -31,14 +31,16 @@ body {
     color: #003049;
     text-align: center;
     font-family: Arial, sans-serif;
-    position: absolute;
-    top: -30px; /* Moves it above the envelope */
-    left: 50%;
-    transform: translateX(-50%); /* Centers the text */
-    width: 100%;
     font-weight: bold;
+    position: absolute;
+    top: -40px; /* Adjust height above the envelope */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 20; /* Ensure it's above other elements */
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
+    animation: up 3s linear infinite; /* Make text float with envelope */
 }
 
 /* Show the text only on mobile */
@@ -48,10 +50,13 @@ body {
     }
 }
 
-/* Hide the instruction when envelope opens */
-.container:hover .mobile-instruction {
-    opacity: 0;
+/* Hide the text when the envelope is hovered (on desktop) */
+@media (min-width: 769px) {
+    .container:hover .mobile-instruction {
+        opacity: 0;
+    }
 }
+
 
 
 .envelope {
