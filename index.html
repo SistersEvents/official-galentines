@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galentine's Invitation</title>
 
-    <!-- Link to your external CSS file -->
+    <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
 
     <!-- jQuery (Make sure it's loaded before script.js) -->
@@ -32,24 +32,18 @@
         </div>
       </div>
     </div>
-<div class="shadow"></div>
+    <div class="shadow"></div>
 
-<!-- Mobile-only "Hold to open invitation!" text -->
-<div class="mobile-text">Hold to open invitation!</div>
+    <!-- Mobile-only "Hold to open invitation!" text -->
+    <div class="mobile-text">Hold to open invitation!</div>
 
-<head>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Hidden Stripe Buy Now Button -->
-  <div id="stripeBuyContainer" style="display: none;">
-    
-    <script async
-  src="https://js.stripe.com/v3/buy-button.js">
-</script>
-
-<stripe-buy-button
-  buy-button-id="buy_btn_1QpdFvKkPkEgkqXJ2vMiZUSt"
-  publishable-key="pk_live_51QnpOUKkPkEgkqXJcWWr8QOFWGj0lPtHs3yPcQxTfegmjBgsdaYD9pwkCKbIDSMYSUcVbB4AEmORNFZB4G6s3q9Q00BRDVKOCv"
->
-</stripe-buy-button>
-  </div>
-</head>
+    <!-- Stripe Buy Now Button (Correct Placement) -->
+    <div id="stripeBuyContainer">
+        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+        <stripe-buy-button
+          buy-button-id="buy_btn_1QpdFvKkPkEgkqXJ2vMiZUSt"
+          publishable-key="pk_live_51QnpOUKkPkEgkqXJcWWr8QOFWGj0lPtHs3yPcQxTfegmjBgsdaYD9pwkCKbIDSMYSUcVbB4AEmORNFZB4G6s3q9Q00BRDVKOCv">
+        </stripe-buy-button>
+    </div>
+</body>
+</html>
