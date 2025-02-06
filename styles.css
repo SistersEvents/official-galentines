@@ -33,15 +33,16 @@ body {
     font-family: Arial, sans-serif;
     font-weight: bold;
     position: absolute;
-    top: -350px; /* Moves text further above the envelope */
-    left: 25px;
+    top: -60px; /* Moves text just above the envelope opening */
+    left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    z-index: 5; /* Lower than the heart */
+    z-index: 20; /* Keep above everything */
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
-    animation: up 3s linear infinite; /* Ensures it follows the envelope */
+    animation: up 3s linear infinite; /* Ensures text moves with the envelope */
 }
+
 
 /* Show the text only on mobile */
 @media (max-width: 768px) {
@@ -110,17 +111,18 @@ body {
 }
 
 .heart {
-  background-color: #d62828;
-  display:inline-block;
-  height: 30px;
-  margin: 0 10px;
-  position: relative;
-  top: 110px;
-  left: 105px;
-  transform: rotate(-45deg);
-  width: 30px;
-  z-index: 10;
+    background-color: #d62828;
+    display: inline-block;
+    height: 30px;
+    margin: 0 10px;
+    position: absolute; /* Change from relative to absolute */
+    top: 60%; /* Center it properly */
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg); /* Centering fix */
+    width: 30px;
+    z-index: 15; /* Ensure the heart is ABOVE everything */
 }
+
 
 .heart:before, .heart:after {
   content:"";
