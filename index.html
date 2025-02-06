@@ -22,7 +22,8 @@
             <div class="front"></div>
             <div class="card">
                 <div class="text">Click on the</br>heart to</br>book!</div>
-                <div class="heart"></div>        
+                <!-- ✅ Added an `id="heart"` to make it easier to select -->
+                <div class="heart" id="heart"></div>        
             </div>
             <div class="hearts">
                 <div class="one"></div>
@@ -35,7 +36,7 @@
     </div>
     <div class="shadow"></div>
 
-    <!-- Hidden Stripe Buy Now Button -->
+    <!-- Hidden Stripe Buy Now Button (Not needed for click event) -->
     <div id="stripeBuyContainer" style="display: none;">
         <script async src="https://js.stripe.com/v3/buy-button.js"></script>
         <stripe-buy-button
