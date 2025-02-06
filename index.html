@@ -1,33 +1,48 @@
-<div class="container">
-    <div class="valentines">
-      <div class="envelope"></div>
-      <div class="front"></div>
-      <div class="card">
-        <div class="text">Click on the</br>heart to</br>book!</div>
-    <div class="heart"></div>        
-    </div>
-  <div class="hearts">
-    <div class="one"></div>
-    <div class="two"></div>
-    <div class="three"></div>
-    <div class="four"></div>
-    <div class="five"></div>
-  </div>
-  </div>
-  </div>
-  <div class="shadow"></div>
-  </div>
-  <head>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Hidden Stripe Buy Now Button -->
-  <div id="stripeBuyContainer" style="display: none;">
-      <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-      <stripe-buy-button
-        buy-button-id="buy_btn_1QpTRuKkPkEgkqXJ4ohqRzIU"
-        publishable-key="pk_live_51QnpOUKkPkEgkqXJcWWr8QOFWGj0lPtHs3yPcQxTfegmjBgsdaYD9pwkCKbIDSMYSUcVbB4AEmORNFZB4G6s3q9Q00BRDVKOCv">
-      </stripe-buy-button>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galentine's Invitation</title>
+
+    <!-- Link to your external CSS file -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- jQuery (Make sure it's loaded before script.js) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- JavaScript file (deferred for better performance) -->
     <script src="script.js" defer></script>
-  </head>
+</head>
+<body>
+
+    <div class="container">
+        <div class="valentines">
+            <div class="envelope"></div>
+            <div class="front"></div>
+            <div class="card">
+                <div class="text">Click on the</br>heart to</br>book!</div>
+                <div class="heart"></div>        
+            </div>
+            <div class="hearts">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+                <div class="five"></div>
+            </div>
+        </div>
+    </div>
+    <div class="shadow"></div>
+
+    <!-- Hidden Stripe Buy Now Button -->
+    <div id="stripeBuyContainer" style="display: none;">
+        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+        <stripe-buy-button
+            buy-button-id="buy_btn_1QpTRuKkPkEgkqXJ4ohqRzIU"
+            publishable-key="pk_live_51QnpOUKkPkEgkqXJcWWr8QOFWGj0lPtHs3yPcQxTfegmjBgsdaYD9pwkCKbIDSMYSUcVbB4AEmORNFZB4G6s3q9Q00BRDVKOCv">
+        </stripe-buy-button>
+    </div>
+
+</body>
+</html>
