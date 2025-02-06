@@ -33,14 +33,14 @@ body {
     font-family: Arial, sans-serif;
     font-weight: bold;
     position: absolute;
-    top: -100px; /* Adjust height above the envelope */
-    left: 80px;
+    top: -150px; /* Moves text further above the envelope */
+    left: 40px;
     transform: translateX(-50%);
     width: 100%;
-    z-index: 20; /* Ensure it's above other elements */
+    z-index: 5; /* Lower than the heart */
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
-    animation: up 3s linear infinite; /* Make text float with envelope */
+    animation: up 3s linear infinite; /* Ensures it follows the envelope */
 }
 
 /* Show the text only on mobile */
@@ -56,7 +56,6 @@ body {
         opacity: 0;
     }
 }
-
 
 
 .envelope {
